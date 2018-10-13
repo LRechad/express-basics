@@ -4,3 +4,7 @@ block content
     h1= article.title
     h6 written by #{article.author}
     p.mt-5= article.body
+    hr
+    a.btn.btn-primary(href='/articles/edit/'+article._id) Edit
+    a.btn.btn-danger.delete-article(href='#', data-id=article._id) Delete
+    script(src="/js/main.js")
