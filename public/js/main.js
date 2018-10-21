@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         const target = e.target;
         const id = target.getAttribute('data-id');
-        fetch('/article/' + id, {
+        fetch('/articles/' + id, {
             method: 'DELETE',
         })
         .then(response => {
